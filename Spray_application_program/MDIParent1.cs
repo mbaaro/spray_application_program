@@ -95,8 +95,21 @@ namespace Spray_application_program
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are you sure you wish to completely exit from the application?");
-        
+            //confirm closure and close the application of ok
+           DialogResult confim = MessageBox.Show("Are you sure you wish to completely exit from the application?", "Confirm Exit", MessageBoxButtons.YesNo);
+            if (confim == DialogResult.Yes)
+            {
+                System.Windows.Forms.Application.Exit();
+            }
+        }
+        private void stocksSystemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileMenu_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

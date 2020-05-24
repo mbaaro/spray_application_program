@@ -80,6 +80,7 @@
             this.fileMenu.Name = "fileMenu";
             this.fileMenu.Size = new System.Drawing.Size(37, 20);
             this.fileMenu.Text = "&File";
+            this.fileMenu.Click += new System.EventHandler(this.fileMenu_Click);
             // 
             // toolStripSeparator3
             // 
@@ -206,6 +207,7 @@
             this.stocksSystemToolStripMenuItem.Name = "stocksSystemToolStripMenuItem";
             this.stocksSystemToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.stocksSystemToolStripMenuItem.Text = "Stocks System";
+            this.stocksSystemToolStripMenuItem.Click += new System.EventHandler(this.stocksSystemToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
