@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace Spray_application_program
 {
-    public partial class Form1 : Form
+    public partial class frmsprayapp : Form
     {
-        public Form1()
+        public frmsprayapp()
         {
             InitializeComponent();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
