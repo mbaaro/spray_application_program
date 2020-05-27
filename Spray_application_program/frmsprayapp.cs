@@ -20,5 +20,12 @@ namespace Spray_application_program
         {
 
         }
+
+        private void greenHouseDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Housedetails();
+            frm.Show();
+
+        }
     }
 }

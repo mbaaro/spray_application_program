@@ -30,11 +30,8 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.postingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setupToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.generateSprayLicenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.greenHouseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cropToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cropDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +59,9 @@
             this.teamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.currencyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.postingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generateSprayLicenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -88,26 +88,10 @@
             this.toolStripMenuItem1.Text = "File";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // postingToolStripMenuItem
-            // 
-            this.postingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.generateSprayLicenceToolStripMenuItem});
-            this.postingToolStripMenuItem.Name = "postingToolStripMenuItem";
-            this.postingToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.postingToolStripMenuItem.Text = "Posting";
-            // 
-            // reportsToolStripMenuItem
-            // 
-            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportSelectorToolStripMenuItem});
-            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.reportsToolStripMenuItem.Text = "Reports";
-            // 
             // setupToolStripMenuItem
             // 
             this.setupToolStripMenuItem.Name = "setupToolStripMenuItem";
-            this.setupToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.setupToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.setupToolStripMenuItem.Text = "Exit";
             // 
             // setupToolStripMenuItem1
@@ -128,20 +112,15 @@
             this.calendarToolStripMenuItem,
             this.currencyToolStripMenuItem});
             this.setupToolStripMenuItem1.Name = "setupToolStripMenuItem1";
-            this.setupToolStripMenuItem1.Size = new System.Drawing.Size(41, 20);
-            this.setupToolStripMenuItem1.Text = "Pest";
-            // 
-            // generateSprayLicenceToolStripMenuItem
-            // 
-            this.generateSprayLicenceToolStripMenuItem.Name = "generateSprayLicenceToolStripMenuItem";
-            this.generateSprayLicenceToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.generateSprayLicenceToolStripMenuItem.Text = "Generate Spray Licence";
+            this.setupToolStripMenuItem1.Size = new System.Drawing.Size(49, 20);
+            this.setupToolStripMenuItem1.Text = "Setup";
             // 
             // greenHouseDetailsToolStripMenuItem
             // 
             this.greenHouseDetailsToolStripMenuItem.Name = "greenHouseDetailsToolStripMenuItem";
-            this.greenHouseDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.greenHouseDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.greenHouseDetailsToolStripMenuItem.Text = "Green House Details";
+            this.greenHouseDetailsToolStripMenuItem.Click += new System.EventHandler(this.greenHouseDetailsToolStripMenuItem_Click);
             // 
             // cropToolStripMenuItem
             // 
@@ -150,7 +129,7 @@
             this.cropStageToolStripMenuItem,
             this.cropStageDetailsToolStripMenuItem});
             this.cropToolStripMenuItem.Name = "cropToolStripMenuItem";
-            this.cropToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cropToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.cropToolStripMenuItem.Text = "Crop";
             // 
             // cropDetailsToolStripMenuItem
@@ -185,7 +164,7 @@
             this.wHORatingToolStripMenuItem,
             this.waterVolumeToolStripMenuItem});
             this.chemicalToolStripMenuItem.Name = "chemicalToolStripMenuItem";
-            this.chemicalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chemicalToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.chemicalToolStripMenuItem.Text = "Chemical";
             // 
             // detailsToolStripMenuItem
@@ -251,31 +230,31 @@
             // storeDetailsToolStripMenuItem
             // 
             this.storeDetailsToolStripMenuItem.Name = "storeDetailsToolStripMenuItem";
-            this.storeDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.storeDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.storeDetailsToolStripMenuItem.Text = "Store Details";
             // 
             // phaseDetailsToolStripMenuItem
             // 
             this.phaseDetailsToolStripMenuItem.Name = "phaseDetailsToolStripMenuItem";
-            this.phaseDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phaseDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.phaseDetailsToolStripMenuItem.Text = "Phase Details";
             // 
             // employeeDetailsToolStripMenuItem
             // 
             this.employeeDetailsToolStripMenuItem.Name = "employeeDetailsToolStripMenuItem";
-            this.employeeDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.employeeDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.employeeDetailsToolStripMenuItem.Text = "Employee Details";
             // 
             // unitsOfMeasureToolStripMenuItem
             // 
             this.unitsOfMeasureToolStripMenuItem.Name = "unitsOfMeasureToolStripMenuItem";
-            this.unitsOfMeasureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.unitsOfMeasureToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.unitsOfMeasureToolStripMenuItem.Text = "Units of Measure";
             // 
             // nozzleDetailsToolStripMenuItem
             // 
             this.nozzleDetailsToolStripMenuItem.Name = "nozzleDetailsToolStripMenuItem";
-            this.nozzleDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nozzleDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.nozzleDetailsToolStripMenuItem.Text = "Nozzle Details";
             // 
             // pestDiseaseDetailsToolStripMenuItem
@@ -313,6 +292,28 @@
             this.currencyToolStripMenuItem.Name = "currencyToolStripMenuItem";
             this.currencyToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.currencyToolStripMenuItem.Text = "Currency";
+            // 
+            // postingToolStripMenuItem
+            // 
+            this.postingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.generateSprayLicenceToolStripMenuItem});
+            this.postingToolStripMenuItem.Name = "postingToolStripMenuItem";
+            this.postingToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.postingToolStripMenuItem.Text = "Posting";
+            // 
+            // generateSprayLicenceToolStripMenuItem
+            // 
+            this.generateSprayLicenceToolStripMenuItem.Name = "generateSprayLicenceToolStripMenuItem";
+            this.generateSprayLicenceToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.generateSprayLicenceToolStripMenuItem.Text = "Generate Spray Licence";
+            // 
+            // reportsToolStripMenuItem
+            // 
+            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reportSelectorToolStripMenuItem});
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // reportSelectorToolStripMenuItem
             // 

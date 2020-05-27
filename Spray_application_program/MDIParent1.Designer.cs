@@ -32,9 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIParent1));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.sprayApplicationSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.stocksSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.systemSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -47,10 +51,6 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.sprayApplicationSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stocksSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.systemSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -82,20 +82,47 @@
             this.fileMenu.Text = "&File";
             this.fileMenu.Click += new System.EventHandler(this.fileMenu_Click);
             // 
+            // sprayApplicationSystemToolStripMenuItem
+            // 
+            this.sprayApplicationSystemToolStripMenuItem.Name = "sprayApplicationSystemToolStripMenuItem";
+            this.sprayApplicationSystemToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.sprayApplicationSystemToolStripMenuItem.Text = "Spray Application System";
+            this.sprayApplicationSystemToolStripMenuItem.Click += new System.EventHandler(this.sprayApplicationSystemToolStripMenuItem_Click);
+            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(205, 6);
+            // 
+            // stocksSystemToolStripMenuItem
+            // 
+            this.stocksSystemToolStripMenuItem.Name = "stocksSystemToolStripMenuItem";
+            this.stocksSystemToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.stocksSystemToolStripMenuItem.Text = "Stocks System";
+            this.stocksSystemToolStripMenuItem.Click += new System.EventHandler(this.stocksSystemToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(205, 6);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(205, 6);
+            // 
+            // systemSettingsToolStripMenuItem
+            // 
+            this.systemSettingsToolStripMenuItem.Name = "systemSettingsToolStripMenuItem";
+            this.systemSettingsToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+            this.systemSettingsToolStripMenuItem.Text = "System Settings";
             // 
             // toolStrip
             // 
@@ -195,32 +222,6 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
-            // 
-            // sprayApplicationSystemToolStripMenuItem
-            // 
-            this.sprayApplicationSystemToolStripMenuItem.Name = "sprayApplicationSystemToolStripMenuItem";
-            this.sprayApplicationSystemToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.sprayApplicationSystemToolStripMenuItem.Text = "Spray Application System";
-            // 
-            // stocksSystemToolStripMenuItem
-            // 
-            this.stocksSystemToolStripMenuItem.Name = "stocksSystemToolStripMenuItem";
-            this.stocksSystemToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.stocksSystemToolStripMenuItem.Text = "Stocks System";
-            this.stocksSystemToolStripMenuItem.Click += new System.EventHandler(this.stocksSystemToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // systemSettingsToolStripMenuItem
-            // 
-            this.systemSettingsToolStripMenuItem.Name = "systemSettingsToolStripMenuItem";
-            this.systemSettingsToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
-            this.systemSettingsToolStripMenuItem.Text = "System Settings";
             // 
             // MDIParent1
             // 

@@ -111,5 +111,12 @@ namespace Spray_application_program
         {
            
         }
+
+        private void sprayApplicationSystemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //lets show the spray app module
+            Form spray = new frmsprayapp();
+            spray.Show();
+        }
     }
 }
