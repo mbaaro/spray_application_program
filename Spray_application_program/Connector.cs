@@ -13,13 +13,24 @@ namespace Spray_application_program
     {
         string constring;
         SqlConnection con;
-        SqlDataAdapter da;
+        
 
         //class to create a  database connection
         public SqlConnection connect()
         {
-            //lets now connect
-            messagebox.show("ss");
+            try
+            {
+
+                constring = "DATA SOURCE=nvskin_data; INITIAL CATALOG=spray_application_test; INTERGRATED SECURITY=true";
+                con = new SqlConnection(constring);
+                con.Open();
+                
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex);
+            }
+            return con;
         }
     }
 }

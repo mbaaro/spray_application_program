@@ -8,3 +8,13 @@ C:\Users\benson.mbaaro\Documents\Visual Studio 2008\Projects\Spray_application_p
 C:\Users\benson.mbaaro\Documents\Visual Studio 2008\Projects\Spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.pdb
 C:\Users\benson.mbaaro\Documents\Visual Studio 2008\Projects\Spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.frmsprayapp.resources
 C:\Users\benson.mbaaro\Documents\Visual Studio 2008\Projects\Spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.Housedetails.resources
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.exe
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.pdb
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.frmsprayapp.resources
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.Housedetails.resources
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.MDIParent1.resources
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.Properties.Resources.resources
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\obj\Debug\Spray_application_program.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\bin\Debug\Spray_application_program.exe
+C:\Users\admin\Documents\Visual Studio 2008\Projects\spray_application_program\Spray_application_program\bin\Debug\Spray_application_program.pdb
