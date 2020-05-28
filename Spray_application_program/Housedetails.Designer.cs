@@ -44,7 +44,6 @@
             this.grdhouses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.name,
             this.empnumb});
-            this.grdhouses.Enabled = false;
             this.grdhouses.Location = new System.Drawing.Point(2, 1);
             this.grdhouses.Name = "grdhouses";
             this.grdhouses.Size = new System.Drawing.Size(566, 331);
@@ -69,6 +68,7 @@
             this.btnadd.TabIndex = 1;
             this.btnadd.Text = "ADD ROW";
             this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // btnrefresh
             // 

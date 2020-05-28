@@ -21,7 +21,7 @@ namespace Spray_application_program
             try
             {
 
-                constring = "DATA SOURCE=nvskin_data; INITIAL CATALOG=spray_application_test; INTERGRATED SECURITY=true";
+                constring = "DATA SOURCE=172.21.4.17; INITIAL CATALOG=spray_app1; INTEGRATED SECURITY=true";
                 con = new SqlConnection(constring);
                 con.Open();
                 

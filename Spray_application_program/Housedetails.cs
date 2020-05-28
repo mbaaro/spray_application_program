@@ -23,10 +23,10 @@ namespace Spray_application_program
         public Housedetails()
         {
             InitializeComponent();
-            //get connection
             Connector cn = new Connector();
             con = cn.connect();
-        }
+            gethouses();
+                    }
 
         private void grdhouses_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -35,16 +35,21 @@ namespace Spray_application_program
         private void gethouses()
         {
             // fetch the available houses
-            query = "";
+            query = "select * from crop ";
             command = new SqlCommand(query, con);
             dr = command.ExecuteReader();
             while (dr.Read())
             {
-                Console.WriteLine(dr.GetString(1));
+                grdhouses.DataSource = dr;
+                //Console.WriteLine(dr.GetString(1));
 
             }
-            //lets set the results as the data to the grid
-            grdhouses.DataSource = dr;
+           
+        }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
