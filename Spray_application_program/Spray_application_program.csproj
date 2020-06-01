@@ -56,11 +56,23 @@
     <Compile Include="frmcrops.Designer.cs">
       <DependentUpon>frmcrops.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmemployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmemployees.Designer.cs">
+      <DependentUpon>frmemployees.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmfilter1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmfilter1.Designer.cs">
       <DependentUpon>frmfilter1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmphase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmphase.Designer.cs">
+      <DependentUpon>frmphase.cs</DependentUpon>
     </Compile>
     <Compile Include="frmsprayapp.cs">
       <SubType>Form</SubType>
@@ -86,8 +98,16 @@
       <DependentUpon>frmcrops.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmemployees.resx">
+      <DependentUpon>frmemployees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmfilter1.resx">
       <DependentUpon>frmfilter1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmphase.resx">
+      <DependentUpon>frmphase.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmsprayapp.resx">
