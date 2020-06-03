@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmappmethod
+    partial class frmcurrency
     {
         /// <summary>
         /// Required designer variable.
@@ -108,7 +108,7 @@
             this.btn_close.Text = "CLOSE";
             this.btn_close.UseVisualStyleBackColor = true;
             // 
-            // frmphase
+            // frmteam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -121,7 +121,7 @@
             this.Controls.Add(this.txt_code);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "frmphase";
+            this.Name = "frmteam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Register Teams";
             this.ResumeLayout(false);

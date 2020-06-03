@@ -52,6 +52,8 @@
             this.phaseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unitsOfMeasureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.detailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.conversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nozzleDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pestDiseaseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sprayPressureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,8 +65,6 @@
             this.generateSprayLicenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.detailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.conversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -212,48 +212,56 @@
             this.tankTypesToolStripMenuItem.Name = "tankTypesToolStripMenuItem";
             this.tankTypesToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.tankTypesToolStripMenuItem.Text = "Tank Types";
+            this.tankTypesToolStripMenuItem.Click += new System.EventHandler(this.tankTypesToolStripMenuItem_Click);
             // 
             // typeToolStripMenuItem
             // 
             this.typeToolStripMenuItem.Name = "typeToolStripMenuItem";
             this.typeToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.typeToolStripMenuItem.Text = "Type";
+            this.typeToolStripMenuItem.Click += new System.EventHandler(this.typeToolStripMenuItem_Click);
             // 
             // categoryToolStripMenuItem
             // 
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
             this.categoryToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.categoryToolStripMenuItem.Text = "Category";
+            this.categoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // wHORatingToolStripMenuItem
             // 
             this.wHORatingToolStripMenuItem.Name = "wHORatingToolStripMenuItem";
             this.wHORatingToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.wHORatingToolStripMenuItem.Text = "WHO Rating";
+            this.wHORatingToolStripMenuItem.Click += new System.EventHandler(this.wHORatingToolStripMenuItem_Click);
             // 
             // waterVolumeToolStripMenuItem
             // 
             this.waterVolumeToolStripMenuItem.Name = "waterVolumeToolStripMenuItem";
             this.waterVolumeToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.waterVolumeToolStripMenuItem.Text = "Water Volume";
+            this.waterVolumeToolStripMenuItem.Click += new System.EventHandler(this.waterVolumeToolStripMenuItem_Click);
             // 
             // storeDetailsToolStripMenuItem
             // 
             this.storeDetailsToolStripMenuItem.Name = "storeDetailsToolStripMenuItem";
             this.storeDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.storeDetailsToolStripMenuItem.Text = "Store Details";
+            this.storeDetailsToolStripMenuItem.Click += new System.EventHandler(this.storeDetailsToolStripMenuItem_Click);
             // 
             // phaseDetailsToolStripMenuItem
             // 
             this.phaseDetailsToolStripMenuItem.Name = "phaseDetailsToolStripMenuItem";
             this.phaseDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.phaseDetailsToolStripMenuItem.Text = "Phase Details";
+            this.phaseDetailsToolStripMenuItem.Click += new System.EventHandler(this.phaseDetailsToolStripMenuItem_Click);
             // 
             // employeeDetailsToolStripMenuItem
             // 
             this.employeeDetailsToolStripMenuItem.Name = "employeeDetailsToolStripMenuItem";
             this.employeeDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.employeeDetailsToolStripMenuItem.Text = "Employee Details";
+            this.employeeDetailsToolStripMenuItem.Click += new System.EventHandler(this.employeeDetailsToolStripMenuItem_Click);
             // 
             // unitsOfMeasureToolStripMenuItem
             // 
@@ -264,47 +272,68 @@
             this.unitsOfMeasureToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.unitsOfMeasureToolStripMenuItem.Text = "Units of Measure";
             // 
+            // detailsToolStripMenuItem1
+            // 
+            this.detailsToolStripMenuItem1.Name = "detailsToolStripMenuItem1";
+            this.detailsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.detailsToolStripMenuItem1.Text = "Details";
+            this.detailsToolStripMenuItem1.Click += new System.EventHandler(this.detailsToolStripMenuItem1_Click);
+            // 
+            // conversionToolStripMenuItem
+            // 
+            this.conversionToolStripMenuItem.Name = "conversionToolStripMenuItem";
+            this.conversionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.conversionToolStripMenuItem.Text = "Conversion";
+            this.conversionToolStripMenuItem.Click += new System.EventHandler(this.conversionToolStripMenuItem_Click);
+            // 
             // nozzleDetailsToolStripMenuItem
             // 
             this.nozzleDetailsToolStripMenuItem.Name = "nozzleDetailsToolStripMenuItem";
             this.nozzleDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.nozzleDetailsToolStripMenuItem.Text = "Nozzle Details";
+            this.nozzleDetailsToolStripMenuItem.Click += new System.EventHandler(this.nozzleDetailsToolStripMenuItem_Click);
             // 
             // pestDiseaseDetailsToolStripMenuItem
             // 
             this.pestDiseaseDetailsToolStripMenuItem.Name = "pestDiseaseDetailsToolStripMenuItem";
             this.pestDiseaseDetailsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.pestDiseaseDetailsToolStripMenuItem.Text = "Pest / Disease Details";
+            this.pestDiseaseDetailsToolStripMenuItem.Click += new System.EventHandler(this.pestDiseaseDetailsToolStripMenuItem_Click);
             // 
             // sprayPressureToolStripMenuItem
             // 
             this.sprayPressureToolStripMenuItem.Name = "sprayPressureToolStripMenuItem";
             this.sprayPressureToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.sprayPressureToolStripMenuItem.Text = "Spray Pressure";
+            this.sprayPressureToolStripMenuItem.Click += new System.EventHandler(this.sprayPressureToolStripMenuItem_Click);
             // 
             // sprayMachinesToolStripMenuItem
             // 
             this.sprayMachinesToolStripMenuItem.Name = "sprayMachinesToolStripMenuItem";
             this.sprayMachinesToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.sprayMachinesToolStripMenuItem.Text = "Spray Machines";
+            this.sprayMachinesToolStripMenuItem.Click += new System.EventHandler(this.sprayMachinesToolStripMenuItem_Click);
             // 
             // teamToolStripMenuItem
             // 
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
             this.teamToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.teamToolStripMenuItem.Text = "Team";
+            this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
             // calendarToolStripMenuItem
             // 
             this.calendarToolStripMenuItem.Name = "calendarToolStripMenuItem";
             this.calendarToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.calendarToolStripMenuItem.Text = "Calendar";
+            this.calendarToolStripMenuItem.Click += new System.EventHandler(this.calendarToolStripMenuItem_Click);
             // 
             // currencyToolStripMenuItem
             // 
             this.currencyToolStripMenuItem.Name = "currencyToolStripMenuItem";
             this.currencyToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.currencyToolStripMenuItem.Text = "Currency";
+            this.currencyToolStripMenuItem.Click += new System.EventHandler(this.currencyToolStripMenuItem_Click);
             // 
             // postingToolStripMenuItem
             // 
@@ -333,18 +362,6 @@
             this.reportSelectorToolStripMenuItem.Name = "reportSelectorToolStripMenuItem";
             this.reportSelectorToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.reportSelectorToolStripMenuItem.Text = "Report Selector";
-            // 
-            // detailsToolStripMenuItem1
-            // 
-            this.detailsToolStripMenuItem1.Name = "detailsToolStripMenuItem1";
-            this.detailsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.detailsToolStripMenuItem1.Text = "Details";
-            // 
-            // conversionToolStripMenuItem
-            // 
-            this.conversionToolStripMenuItem.Name = "conversionToolStripMenuItem";
-            this.conversionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.conversionToolStripMenuItem.Text = "Conversion";
             // 
             // frmsprayapp
             // 

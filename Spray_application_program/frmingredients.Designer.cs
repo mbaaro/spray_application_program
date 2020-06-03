@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmappmethod
+    partial class frmcurrency
     {
         /// <summary>
         /// Required designer variable.

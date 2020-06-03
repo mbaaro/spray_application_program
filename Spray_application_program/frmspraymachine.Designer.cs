@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmappmethod
+    partial class frmcurrency
     {
         /// <summary>
         /// Required designer variable.
@@ -107,7 +107,7 @@
             this.txt_desc.Size = new System.Drawing.Size(179, 20);
             this.txt_desc.TabIndex = 11;
             // 
-            // frmphase
+            // frmspraymachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,7 +120,7 @@
             this.Controls.Add(this.txt_code);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "frmphase";
+            this.Name = "frmspraymachine";
             this.Text = "Spray Machines";
             this.ResumeLayout(false);
             this.PerformLayout();

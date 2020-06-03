@@ -60,19 +60,121 @@ namespace Spray_application_program
 
         private void ingredientsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmappmethod show = new frmappmethod();
+            frmcurrency show = new frmcurrency();
             show.Show();
         }
 
         private void modeOfActionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmappmethod show = new frmappmethod();
+            frmcurrency show = new frmcurrency();
             show.Show();
                     }
 
         private void applicationMethodToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmappmethod show = new frmappmethod();
+            frmcurrency show = new frmcurrency();
+            show.Show();
+        }
+
+        private void tankTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+        }
+
+        private void typeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+        }
+
+        private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+        }
+
+        private void wHORatingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmWHORatings show = new frmWHORatings();
+            show.Show();
+        }
+
+        private void waterVolumeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmwatervolume show = new frmwatervolume();
+            show.Show();
+         }
+
+        private void phaseDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+                    }
+
+        private void employeeDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmemployees show = new frmemployees();
+            show.Show();
+        }
+
+        private void detailsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+                    }
+
+        private void conversionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmuomconvert show = new frmuomconvert();
+            show.Show();
+        }
+
+        private void nozzleDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+        }
+
+        private void pestDiseaseDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmpests_disease show = new frmpests_disease();
+            show.Show();
+        }
+
+        private void sprayPressureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show=new frmcurrency();
+            show.Show();
+        }
+
+        private void sprayMachinesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+        }
+
+        private void teamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+        }
+
+        private void calendarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmweeks show = new frmweeks();
+            show.Show();
+        }
+
+        private void currencyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcurrency show = new frmcurrency();
+            show.Show();
+        }
+
+        private void storeDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmstore show = new frmstore();
             show.Show();
         }
     }

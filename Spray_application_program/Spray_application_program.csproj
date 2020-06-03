@@ -68,6 +68,12 @@
     <Compile Include="frmcutstage.Designer.cs">
       <DependentUpon>frmcutstage.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstore.Designer.cs">
+      <DependentUpon>frmstore.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmuomconvert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,11 +194,23 @@
     <Compile Include="frmteam.Designer.cs">
       <DependentUpon>frmteam.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmwatervolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmwatervolume.Designer.cs">
+      <DependentUpon>frmwatervolume.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmweeks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmweeks.Designer.cs">
       <DependentUpon>frmweeks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWHORatings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmWHORatings.Designer.cs">
+      <DependentUpon>frmWHORatings.cs</DependentUpon>
     </Compile>
     <Compile Include="Housedetails.cs">
       <SubType>Form</SubType>
@@ -208,6 +226,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmstore.resx">
+      <DependentUpon>frmstore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmuomconvert.resx">
       <DependentUpon>frmuomconvert.cs</DependentUpon>
       <SubType>Designer</SubType>

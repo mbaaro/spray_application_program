@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Spray_application_program
 {
-    public partial class frmcurrency : Form
+    public partial class frmstore : Form
     {
-        public frmcurrency()
+        public frmstore()
         {
             InitializeComponent();
         }
