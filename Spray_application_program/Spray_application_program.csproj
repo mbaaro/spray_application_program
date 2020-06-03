@@ -50,6 +50,84 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connector.cs" />
+    <Compile Include="frmchemtargets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchemtargets.Designer.cs">
+      <DependentUpon>frmchemtargets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcropstage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcropstage.Designer.cs">
+      <DependentUpon>frmcropstage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcutstage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcutstage.Designer.cs">
+      <DependentUpon>frmcutstage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuomconvert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuomconvert.Designer.cs">
+      <DependentUpon>frmuomconvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuomdets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuomdets.Designer.cs">
+      <DependentUpon>frmuomdets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtanktypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtanktypes.Designer.cs">
+      <DependentUpon>frmtanktypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmchemcat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchemcat.Designer.cs">
+      <DependentUpon>frmchemcat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmchemtype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchemtype.Designer.cs">
+      <DependentUpon>frmchemtype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmappmethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmappmethod.Designer.cs">
+      <DependentUpon>frmappmethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmodeofaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmodeofaction.Designer.cs">
+      <DependentUpon>frmmodeofaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmingredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmingredients.Designer.cs">
+      <DependentUpon>frmingredients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Currency.Designer.cs">
+      <DependentUpon>Currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmchemical_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchemical_details.Designer.cs">
+      <DependentUpon>frmchemical_details.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmcrops.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +146,18 @@
     <Compile Include="frmfilter1.Designer.cs">
       <DependentUpon>frmfilter1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmnozzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnozzle.Designer.cs">
+      <DependentUpon>frmnozzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpests_disease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpests_disease.Designer.cs">
+      <DependentUpon>frmpests_disease.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmphase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +169,30 @@
     </Compile>
     <Compile Include="frmsprayapp.Designer.cs">
       <DependentUpon>frmsprayapp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmspraymachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmspraymachine.Designer.cs">
+      <DependentUpon>frmspraymachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmspraypressure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmspraypressure.Designer.cs">
+      <DependentUpon>frmspraypressure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmteam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmteam.Designer.cs">
+      <DependentUpon>frmteam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmweeks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmweeks.Designer.cs">
+      <DependentUpon>frmweeks.cs</DependentUpon>
     </Compile>
     <Compile Include="Housedetails.cs">
       <SubType>Form</SubType>
@@ -94,6 +208,46 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmuomconvert.resx">
+      <DependentUpon>frmuomconvert.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuomdets.resx">
+      <DependentUpon>frmuomdets.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtanktypes.resx">
+      <DependentUpon>frmtanktypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchemcat.resx">
+      <DependentUpon>frmchemcat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchemtype.resx">
+      <DependentUpon>frmchemtype.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmappmethod.resx">
+      <DependentUpon>frmappmethod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmodeofaction.resx">
+      <DependentUpon>frmmodeofaction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmingredients.resx">
+      <DependentUpon>frmingredients.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Currency.resx">
+      <DependentUpon>Currency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchemical_details.resx">
+      <DependentUpon>frmchemical_details.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmcrops.resx">
       <DependentUpon>frmcrops.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -106,6 +260,14 @@
       <DependentUpon>frmfilter1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmnozzle.resx">
+      <DependentUpon>frmnozzle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpests_disease.resx">
+      <DependentUpon>frmpests_disease.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmphase.resx">
       <DependentUpon>frmphase.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -113,6 +275,21 @@
     <EmbeddedResource Include="frmsprayapp.resx">
       <DependentUpon>frmsprayapp.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmspraymachine.resx">
+      <DependentUpon>frmspraymachine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmspraypressure.resx">
+      <DependentUpon>frmspraypressure.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmteam.resx">
+      <DependentUpon>frmteam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmweeks.resx">
+      <DependentUpon>frmweeks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Housedetails.resx">
       <DependentUpon>Housedetails.cs</DependentUpon>

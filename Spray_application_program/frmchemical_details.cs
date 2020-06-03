@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace Spray_application_program
 {
-    public partial class frmappmethod : Form
+    public partial class frmchemical_details : Form
     {
-        public frmappmethod()
+        public frmchemical_details()
         {
             InitializeComponent();
         }
+
+       
+
+        
+        
     }
 }

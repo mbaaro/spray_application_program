@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmphase
+    partial class frmappmethod
     {
         /// <summary>
         /// Required designer variable.
@@ -32,12 +32,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_code = new System.Windows.Forms.TextBox();
-            this.txt_team = new System.Windows.Forms.TextBox();
             this.cmb_grower = new System.Windows.Forms.ComboBox();
             this.chkdeleted = new System.Windows.Forms.CheckBox();
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
+            this.txt_phasedesc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -73,13 +73,6 @@
             this.txt_code.Name = "txt_code";
             this.txt_code.Size = new System.Drawing.Size(100, 20);
             this.txt_code.TabIndex = 4;
-            // 
-            // txt_phase
-            // 
-            this.txt_team.Location = new System.Drawing.Point(75, 52);
-            this.txt_team.Name = "txt_phase";
-            this.txt_team.Size = new System.Drawing.Size(238, 20);
-            this.txt_team.TabIndex = 5;
             // 
             // cmb_grower
             // 
@@ -126,17 +119,24 @@
             this.btn_close.Text = "CLOSE";
             this.btn_close.UseVisualStyleBackColor = true;
             // 
+            // txt_phasedesc
+            // 
+            this.txt_phasedesc.Location = new System.Drawing.Point(74, 51);
+            this.txt_phasedesc.Name = "txt_phasedesc";
+            this.txt_phasedesc.Size = new System.Drawing.Size(136, 20);
+            this.txt_phasedesc.TabIndex = 11;
+            // 
             // frmphase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 219);
+            this.Controls.Add(this.txt_phasedesc);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.chkdeleted);
             this.Controls.Add(this.cmb_grower);
-            this.Controls.Add(this.txt_team);
             this.Controls.Add(this.txt_code);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -160,5 +160,6 @@
         private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.TextBox txt_phasedesc;
     }
 }

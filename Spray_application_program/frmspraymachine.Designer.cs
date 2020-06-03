@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmphase
+    partial class frmappmethod
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_desc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -43,9 +43,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nozzle Code:";
+            this.label1.Text = "Machine Code:";
             // 
             // label4
             // 
@@ -58,7 +58,7 @@
             // 
             // txt_code
             // 
-            this.txt_code.Location = new System.Drawing.Point(75, 10);
+            this.txt_code.Location = new System.Drawing.Point(77, 10);
             this.txt_code.Name = "txt_code";
             this.txt_code.Size = new System.Drawing.Size(100, 20);
             this.txt_code.TabIndex = 4;
@@ -100,19 +100,19 @@
             this.btn_close.Text = "CLOSE";
             this.btn_close.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txt_desc
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 20);
-            this.textBox1.TabIndex = 11;
+            this.txt_desc.Location = new System.Drawing.Point(74, 53);
+            this.txt_desc.Name = "txt_desc";
+            this.txt_desc.Size = new System.Drawing.Size(179, 20);
+            this.txt_desc.TabIndex = 11;
             // 
             // frmphase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 149);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_edit);
@@ -138,5 +138,6 @@
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_desc;
     }
 }

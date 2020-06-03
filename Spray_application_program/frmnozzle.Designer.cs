@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmphase
+    partial class frmappmethod
     {
         /// <summary>
         /// Required designer variable.
@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_code = new System.Windows.Forms.TextBox();
-            this.txt_team = new System.Windows.Forms.TextBox();
             this.chkdeleted = new System.Windows.Forms.CheckBox();
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
+            this.txt_desc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -62,13 +62,6 @@
             this.txt_code.Name = "txt_code";
             this.txt_code.Size = new System.Drawing.Size(100, 20);
             this.txt_code.TabIndex = 4;
-            // 
-            // txt_phase
-            // 
-            this.txt_team.Location = new System.Drawing.Point(75, 52);
-            this.txt_team.Name = "txt_phase";
-            this.txt_team.Size = new System.Drawing.Size(238, 20);
-            this.txt_team.TabIndex = 5;
             // 
             // chkdeleted
             // 
@@ -107,20 +100,27 @@
             this.btn_close.Text = "CLOSE";
             this.btn_close.UseVisualStyleBackColor = true;
             // 
-            // frmphase
+            // txt_desc
+            // 
+            this.txt_desc.Location = new System.Drawing.Point(69, 52);
+            this.txt_desc.Name = "txt_desc";
+            this.txt_desc.Size = new System.Drawing.Size(175, 20);
+            this.txt_desc.TabIndex = 11;
+            // 
+            // frmnozzle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 149);
+            this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.chkdeleted);
-            this.Controls.Add(this.txt_team);
             this.Controls.Add(this.txt_code);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "frmphase";
+            this.Name = "frmnozzle";
             this.Text = "Nozzle Details";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,5 +137,7 @@
         private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.TextBox txt_nozzledesc;
+        private System.Windows.Forms.TextBox txt_desc;
     }
 }

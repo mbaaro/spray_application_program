@@ -70,7 +70,7 @@
             // 
             this.txt_empid.Location = new System.Drawing.Point(78, 12);
             this.txt_empid.Name = "txt_empid";
-            this.txt_empid.Size = new System.Drawing.Size(215, 20);
+            this.txt_empid.Size = new System.Drawing.Size(113, 20);
             this.txt_empid.TabIndex = 3;
             // 
             // txt_empname

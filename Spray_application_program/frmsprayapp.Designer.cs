@@ -63,6 +63,8 @@
             this.generateSprayLicenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.detailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.conversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,18 +139,21 @@
             this.cropDetailsToolStripMenuItem.Name = "cropDetailsToolStripMenuItem";
             this.cropDetailsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.cropDetailsToolStripMenuItem.Text = "Crop Details";
+            this.cropDetailsToolStripMenuItem.Click += new System.EventHandler(this.cropDetailsToolStripMenuItem_Click);
             // 
             // cropStageToolStripMenuItem
             // 
             this.cropStageToolStripMenuItem.Name = "cropStageToolStripMenuItem";
             this.cropStageToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.cropStageToolStripMenuItem.Text = "Crop Stage";
+            this.cropStageToolStripMenuItem.Click += new System.EventHandler(this.cropStageToolStripMenuItem_Click);
             // 
             // cropStageDetailsToolStripMenuItem
             // 
             this.cropStageDetailsToolStripMenuItem.Name = "cropStageDetailsToolStripMenuItem";
             this.cropStageDetailsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.cropStageDetailsToolStripMenuItem.Text = "Crop Stage Details";
+            this.cropStageDetailsToolStripMenuItem.Click += new System.EventHandler(this.cropStageDetailsToolStripMenuItem_Click);
             // 
             // chemicalToolStripMenuItem
             // 
@@ -172,30 +177,35 @@
             this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
             this.detailsToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.detailsToolStripMenuItem.Text = "Details";
+            this.detailsToolStripMenuItem.Click += new System.EventHandler(this.detailsToolStripMenuItem_Click);
             // 
             // chemicalPestsTargetToolStripMenuItem
             // 
             this.chemicalPestsTargetToolStripMenuItem.Name = "chemicalPestsTargetToolStripMenuItem";
             this.chemicalPestsTargetToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.chemicalPestsTargetToolStripMenuItem.Text = "Chemical Pests/Target";
+            this.chemicalPestsTargetToolStripMenuItem.Click += new System.EventHandler(this.chemicalPestsTargetToolStripMenuItem_Click);
             // 
             // ingredientsToolStripMenuItem
             // 
             this.ingredientsToolStripMenuItem.Name = "ingredientsToolStripMenuItem";
             this.ingredientsToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.ingredientsToolStripMenuItem.Text = "Ingredients";
+            this.ingredientsToolStripMenuItem.Click += new System.EventHandler(this.ingredientsToolStripMenuItem_Click);
             // 
             // modeOfActionToolStripMenuItem
             // 
             this.modeOfActionToolStripMenuItem.Name = "modeOfActionToolStripMenuItem";
             this.modeOfActionToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.modeOfActionToolStripMenuItem.Text = "Mode of Action";
+            this.modeOfActionToolStripMenuItem.Click += new System.EventHandler(this.modeOfActionToolStripMenuItem_Click);
             // 
             // applicationMethodToolStripMenuItem
             // 
             this.applicationMethodToolStripMenuItem.Name = "applicationMethodToolStripMenuItem";
             this.applicationMethodToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.applicationMethodToolStripMenuItem.Text = "Application Method";
+            this.applicationMethodToolStripMenuItem.Click += new System.EventHandler(this.applicationMethodToolStripMenuItem_Click);
             // 
             // tankTypesToolStripMenuItem
             // 
@@ -247,6 +257,9 @@
             // 
             // unitsOfMeasureToolStripMenuItem
             // 
+            this.unitsOfMeasureToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detailsToolStripMenuItem1,
+            this.conversionToolStripMenuItem});
             this.unitsOfMeasureToolStripMenuItem.Name = "unitsOfMeasureToolStripMenuItem";
             this.unitsOfMeasureToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.unitsOfMeasureToolStripMenuItem.Text = "Units of Measure";
@@ -321,6 +334,18 @@
             this.reportSelectorToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.reportSelectorToolStripMenuItem.Text = "Report Selector";
             // 
+            // detailsToolStripMenuItem1
+            // 
+            this.detailsToolStripMenuItem1.Name = "detailsToolStripMenuItem1";
+            this.detailsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.detailsToolStripMenuItem1.Text = "Details";
+            // 
+            // conversionToolStripMenuItem
+            // 
+            this.conversionToolStripMenuItem.Name = "conversionToolStripMenuItem";
+            this.conversionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.conversionToolStripMenuItem.Text = "Conversion";
+            // 
             // frmsprayapp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,6 +399,8 @@
         private System.Windows.Forms.ToolStripMenuItem calendarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem currencyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportSelectorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem detailsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem conversionToolStripMenuItem;
     }
 }
 

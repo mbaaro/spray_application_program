@@ -43,9 +43,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Code:";
+            this.label1.Text = " Code:";
             // 
             // label4
             // 
@@ -68,9 +68,9 @@
             this.chkdeleted.AutoSize = true;
             this.chkdeleted.Location = new System.Drawing.Point(75, 87);
             this.chkdeleted.Name = "chkdeleted";
-            this.chkdeleted.Size = new System.Drawing.Size(63, 17);
+            this.chkdeleted.Size = new System.Drawing.Size(66, 17);
             this.chkdeleted.TabIndex = 7;
-            this.chkdeleted.Text = "Deleted";
+            this.chkdeleted.Text = "Deleted:";
             this.chkdeleted.UseVisualStyleBackColor = true;
             // 
             // btn_edit
@@ -102,16 +102,16 @@
             // 
             // txt_desc
             // 
-            this.txt_desc.Location = new System.Drawing.Point(76, 52);
+            this.txt_desc.Location = new System.Drawing.Point(75, 52);
             this.txt_desc.Name = "txt_desc";
-            this.txt_desc.Size = new System.Drawing.Size(157, 20);
+            this.txt_desc.Size = new System.Drawing.Size(152, 20);
             this.txt_desc.TabIndex = 11;
             // 
-            // frmphase
+            // frmchemcat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 149);
+            this.ClientSize = new System.Drawing.Size(377, 149);
             this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_update);
@@ -120,8 +120,8 @@
             this.Controls.Add(this.txt_code);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "frmphase";
-            this.Text = "Spray Pressure";
+            this.Name = "frmchemcat";
+            this.Text = "Chemical Category";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,7 +137,6 @@
         private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_close;
-        private System.Windows.Forms.TextBox txt_spraypressure;
         private System.Windows.Forms.TextBox txt_desc;
     }
 }

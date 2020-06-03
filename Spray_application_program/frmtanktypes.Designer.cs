@@ -36,6 +36,10 @@
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
             this.txt_desc = new System.Windows.Forms.TextBox();
+            this.Text_capacity = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmb_units = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -43,9 +47,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Code:";
+            this.label1.Text = " Code:";
             // 
             // label4
             // 
@@ -58,24 +62,24 @@
             // 
             // txt_code
             // 
-            this.txt_code.Location = new System.Drawing.Point(75, 10);
+            this.txt_code.Location = new System.Drawing.Point(90, 10);
             this.txt_code.Name = "txt_code";
-            this.txt_code.Size = new System.Drawing.Size(100, 20);
+            this.txt_code.Size = new System.Drawing.Size(117, 20);
             this.txt_code.TabIndex = 4;
             // 
             // chkdeleted
             // 
             this.chkdeleted.AutoSize = true;
-            this.chkdeleted.Location = new System.Drawing.Point(75, 87);
+            this.chkdeleted.Location = new System.Drawing.Point(90, 173);
             this.chkdeleted.Name = "chkdeleted";
-            this.chkdeleted.Size = new System.Drawing.Size(63, 17);
+            this.chkdeleted.Size = new System.Drawing.Size(66, 17);
             this.chkdeleted.TabIndex = 7;
-            this.chkdeleted.Text = "Deleted";
+            this.chkdeleted.Text = "Deleted:";
             this.chkdeleted.UseVisualStyleBackColor = true;
             // 
             // btn_edit
             // 
-            this.btn_edit.Location = new System.Drawing.Point(10, 112);
+            this.btn_edit.Location = new System.Drawing.Point(7, 196);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(97, 27);
             this.btn_edit.TabIndex = 8;
@@ -84,7 +88,7 @@
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(125, 112);
+            this.btn_update.Location = new System.Drawing.Point(122, 196);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(97, 27);
             this.btn_update.TabIndex = 9;
@@ -93,7 +97,7 @@
             // 
             // btn_close
             // 
-            this.btn_close.Location = new System.Drawing.Point(248, 112);
+            this.btn_close.Location = new System.Drawing.Point(245, 196);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(97, 27);
             this.btn_close.TabIndex = 10;
@@ -102,16 +106,53 @@
             // 
             // txt_desc
             // 
-            this.txt_desc.Location = new System.Drawing.Point(76, 52);
+            this.txt_desc.Location = new System.Drawing.Point(90, 52);
             this.txt_desc.Name = "txt_desc";
-            this.txt_desc.Size = new System.Drawing.Size(157, 20);
+            this.txt_desc.Size = new System.Drawing.Size(169, 20);
             this.txt_desc.TabIndex = 11;
             // 
-            // frmphase
+            // Text_capacity
+            // 
+            this.Text_capacity.Location = new System.Drawing.Point(90, 87);
+            this.Text_capacity.Name = "Text_capacity";
+            this.Text_capacity.Size = new System.Drawing.Size(169, 20);
+            this.Text_capacity.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(0, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Capacity Litres :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(0, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Unit Of Measure :";
+            // 
+            // cmb_units
+            // 
+            this.cmb_units.FormattingEnabled = true;
+            this.cmb_units.Location = new System.Drawing.Point(90, 125);
+            this.cmb_units.Name = "cmb_units";
+            this.cmb_units.Size = new System.Drawing.Size(169, 21);
+            this.cmb_units.TabIndex = 15;
+            // 
+            // frmtanktypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 149);
+            this.ClientSize = new System.Drawing.Size(348, 235);
+            this.Controls.Add(this.cmb_units);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Text_capacity);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_update);
@@ -120,8 +161,8 @@
             this.Controls.Add(this.txt_code);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "frmphase";
-            this.Text = "Spray Pressure";
+            this.Name = "frmtanktypes";
+            this.Text = "Tank Types";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,7 +178,10 @@
         private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_close;
-        private System.Windows.Forms.TextBox txt_spraypressure;
         private System.Windows.Forms.TextBox txt_desc;
+        private System.Windows.Forms.TextBox Text_capacity;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmb_units;
     }
 }

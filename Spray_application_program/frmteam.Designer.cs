@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmphase
+    partial class frmappmethod
     {
         /// <summary>
         /// Required designer variable.

@@ -27,5 +27,53 @@ namespace Spray_application_program
             frm.Show();
 
         }
+
+        private void cropDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcrops show = new frmcrops();
+            show.Show();
+        }
+
+        private void cropStageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcropstage show = new frmcropstage();
+            show.Show();
+        }
+
+        private void cropStageDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcutstage show = new frmcutstage();
+            show.Show();
+        }
+
+        private void detailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmchemical_details show = new frmchemical_details();
+            show.Show();
+        }
+
+        private void chemicalPestsTargetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmchemtargets show = new frmchemtargets();
+            show.Show();
+        }
+
+        private void ingredientsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmappmethod show = new frmappmethod();
+            show.Show();
+        }
+
+        private void modeOfActionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmappmethod show = new frmappmethod();
+            show.Show();
+                    }
+
+        private void applicationMethodToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmappmethod show = new frmappmethod();
+            show.Show();
+        }
     }
 }

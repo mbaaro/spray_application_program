@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Spray_application_program
 {
-    public partial class frmphase : Form
+    public partial class frmappmethod : Form
     {
-        public frmphase()
+        public frmappmethod()
         {
             InitializeComponent();
         }

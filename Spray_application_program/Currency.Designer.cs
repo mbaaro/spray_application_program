@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmphase
+    partial class frmappmethod
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
-            this.txt_spraypressure = new System.Windows.Forms.TextBox();
+            this.txt_currencydesc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -100,19 +100,19 @@
             this.btn_close.Text = "CLOSE";
             this.btn_close.UseVisualStyleBackColor = true;
             // 
-            // txt_spraypressure
+            // txt_currencydesc
             // 
-            this.txt_spraypressure.Location = new System.Drawing.Point(75, 47);
-            this.txt_spraypressure.Name = "txt_spraypressure";
-            this.txt_spraypressure.Size = new System.Drawing.Size(270, 20);
-            this.txt_spraypressure.TabIndex = 11;
+            this.txt_currencydesc.Location = new System.Drawing.Point(75, 47);
+            this.txt_currencydesc.Name = "txt_currencydesc";
+            this.txt_currencydesc.Size = new System.Drawing.Size(270, 20);
+            this.txt_currencydesc.TabIndex = 11;
             // 
             // frmphase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 149);
-            this.Controls.Add(this.txt_spraypressure);
+            this.Controls.Add(this.txt_currencydesc);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_edit);
@@ -137,6 +137,6 @@
         private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_close;
-        private System.Windows.Forms.TextBox txt_spraypressure;
+        private System.Windows.Forms.TextBox txt_currencydesc;
     }
 }
