@@ -143,7 +143,7 @@
             // 
             // cropStageToolStripMenuItem
             // 
-            this.cropStageToolStripMenuItem.Name = "cropStageToolStripMenuItem";
+            /*this.cropStageToolStripMenuItem.Name = "cropStageToolStripMenuItem";
             this.cropStageToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.cropStageToolStripMenuItem.Text = "Crop Stage";
             this.cropStageToolStripMenuItem.Click += new System.EventHandler(this.cropStageToolStripMenuItem_Click);
@@ -154,7 +154,7 @@
             this.cropStageDetailsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.cropStageDetailsToolStripMenuItem.Text = "Crop Stage Details";
             this.cropStageDetailsToolStripMenuItem.Click += new System.EventHandler(this.cropStageDetailsToolStripMenuItem_Click);
-            // 
+            */// 
             // chemicalToolStripMenuItem
             // 
             this.chemicalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {

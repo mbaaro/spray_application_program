@@ -1,6 +1,6 @@
 ﻿namespace Spray_application_program
 {
-    partial class frmcutstage
+    partial class frmmodeofaction1
     {
         /// <summary>
         /// Required designer variable.
@@ -40,78 +40,78 @@
             // 
             // txt_desc
             // 
-            this.txt_desc.Location = new System.Drawing.Point(80, 54);
+            this.txt_desc.Location = new System.Drawing.Point(83, 52);
             this.txt_desc.Name = "txt_desc";
             this.txt_desc.Size = new System.Drawing.Size(152, 20);
-            this.txt_desc.TabIndex = 27;
+            this.txt_desc.TabIndex = 19;
             // 
             // btn_close
             // 
-            this.btn_close.Location = new System.Drawing.Point(253, 114);
+            this.btn_close.Location = new System.Drawing.Point(256, 112);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(97, 27);
-            this.btn_close.TabIndex = 26;
+            this.btn_close.TabIndex = 18;
             this.btn_close.Text = "CLOSE";
             this.btn_close.UseVisualStyleBackColor = true;
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(130, 114);
+            this.btn_update.Location = new System.Drawing.Point(133, 112);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(97, 27);
-            this.btn_update.TabIndex = 25;
+            this.btn_update.TabIndex = 17;
             this.btn_update.Text = "UPDATE";
             this.btn_update.UseVisualStyleBackColor = true;
             // 
             // btn_edit
             // 
-            this.btn_edit.Location = new System.Drawing.Point(15, 114);
+            this.btn_edit.Location = new System.Drawing.Point(18, 112);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(97, 27);
-            this.btn_edit.TabIndex = 24;
+            this.btn_edit.TabIndex = 16;
             this.btn_edit.Text = "EDIT";
             this.btn_edit.UseVisualStyleBackColor = true;
             // 
             // chkdeleted
             // 
             this.chkdeleted.AutoSize = true;
-            this.chkdeleted.Location = new System.Drawing.Point(80, 89);
+            this.chkdeleted.Location = new System.Drawing.Point(83, 87);
             this.chkdeleted.Name = "chkdeleted";
             this.chkdeleted.Size = new System.Drawing.Size(66, 17);
-            this.chkdeleted.TabIndex = 23;
+            this.chkdeleted.TabIndex = 15;
             this.chkdeleted.Text = "Deleted:";
             this.chkdeleted.UseVisualStyleBackColor = true;
             // 
             // txt_code
             // 
-            this.txt_code.Location = new System.Drawing.Point(80, 12);
+            this.txt_code.Location = new System.Drawing.Point(83, 10);
             this.txt_code.Name = "txt_code";
             this.txt_code.Size = new System.Drawing.Size(100, 20);
-            this.txt_code.TabIndex = 22;
+            this.txt_code.TabIndex = 14;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 57);
+            this.label4.Location = new System.Drawing.Point(8, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 21;
+            this.label4.TabIndex = 13;
             this.label4.Text = "Description:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 11);
+            this.label1.Location = new System.Drawing.Point(8, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 20;
+            this.label1.TabIndex = 12;
             this.label1.Text = " Code:";
             // 
-            // frmcutstage
+            // frmmodeofaction1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 152);
+            this.ClientSize = new System.Drawing.Size(361, 157);
             this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_update);
@@ -120,8 +120,9 @@
             this.Controls.Add(this.txt_code);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "frmcutstage";
-            this.Text = "frmcutstage";
+            this.Name = "frmmodeofaction1";
+            this.Text = "frmmodeofaction1";
+            this.Load += new System.EventHandler(this.frmmodeofaction1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

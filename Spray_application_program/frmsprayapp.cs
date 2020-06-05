@@ -23,7 +23,7 @@ namespace Spray_application_program
 
         private void greenHouseDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new Housedetails();
+            Form frm = new frmHousedetails();
             frm.Show();
 
         }
@@ -34,13 +34,7 @@ namespace Spray_application_program
             show.Show();
         }
 
-        private void cropStageToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmcropstage show = new frmcropstage();
-            show.Show();
-        }
-
-        private void cropStageDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+               private void cropStageDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmcutstage show = new frmcutstage();
             show.Show();
@@ -60,43 +54,43 @@ namespace Spray_application_program
 
         private void ingredientsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmingredients1 show = new frmingredients1();
             show.Show();
         }
 
         private void modeOfActionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmmodeofaction1 show = new frmmodeofaction1();
             show.Show();
                     }
 
         private void applicationMethodToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmappmethod1 show = new frmappmethod1();
             show.Show();
         }
 
         private void tankTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmtanktypes1 show = new frmtanktypes1();
             show.Show();
         }
 
         private void typeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmchemtypes1 show = new frmchemtypes1();
             show.Show();
         }
 
         private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmchemcat1 show = new frmchemcat1();
             show.Show();
         }
 
         private void wHORatingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmWHORatings show = new frmWHORatings();
+            frmWHORatings1 show = new frmWHORatings1();
             show.Show();
         }
 
@@ -108,55 +102,55 @@ namespace Spray_application_program
 
         private void phaseDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmphase1 show = new frmphase1();
             show.Show();
                     }
 
         private void employeeDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmemployees show = new frmemployees();
+            frmemployees1 show = new frmemployees1();
             show.Show();
         }
 
         private void detailsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmchemical_details show = new frmchemical_details();
             show.Show();
                     }
 
         private void conversionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmuomconvert show = new frmuomconvert();
+            frmuomconvert1 show = new frmuomconvert1();
             show.Show();
         }
 
         private void nozzleDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmnozzle1 show = new frmnozzle1();
             show.Show();
         }
 
         private void pestDiseaseDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmpests_disease show = new frmpests_disease();
+            frmpest_diseases1 show = new frmpest_diseases1();
             show.Show();
         }
 
         private void sprayPressureToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show=new frmcurrency();
+            frmspraypressure1 show = new frmspraypressure1();
             show.Show();
         }
 
         private void sprayMachinesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmspraymachines1 show = new frmspraymachines1();
             show.Show();
         }
 
         private void teamToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmteams1 show = new frmteams1();
             show.Show();
         }
 
@@ -168,7 +162,7 @@ namespace Spray_application_program
 
         private void currencyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcurrency show = new frmcurrency();
+            frmcurrency1 show = new frmcurrency1();
             show.Show();
         }
 

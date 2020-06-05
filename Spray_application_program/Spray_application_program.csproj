@@ -50,17 +50,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connector.cs" />
+    <Compile Include="frmappmethod1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmappmethod1.Designer.cs">
+      <DependentUpon>frmappmethod1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmchemcat1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchemcat1.Designer.cs">
+      <DependentUpon>frmchemcat1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmchemtargets.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmchemtargets.Designer.cs">
       <DependentUpon>frmchemtargets.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmcropstage.cs">
+    <Compile Include="frmchemtypes1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmcropstage.Designer.cs">
-      <DependentUpon>frmcropstage.cs</DependentUpon>
+    <Compile Include="frmchemtypes1.Designer.cs">
+      <DependentUpon>frmchemtypes1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcurrency1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcurrency1.Designer.cs">
+      <DependentUpon>frmcurrency1.cs</DependentUpon>
     </Compile>
     <Compile Include="frmcutstage.cs">
       <SubType>Form</SubType>
@@ -68,65 +86,83 @@
     <Compile Include="frmcutstage.Designer.cs">
       <DependentUpon>frmcutstage.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmemployees1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmemployees1.Designer.cs">
+      <DependentUpon>frmemployees1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmingredients1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmingredients1.Designer.cs">
+      <DependentUpon>frmingredients1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmodeofaction1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmodeofaction1.Designer.cs">
+      <DependentUpon>frmmodeofaction1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnozzle1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnozzle1.Designer.cs">
+      <DependentUpon>frmnozzle1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpest_diseases1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpest_diseases1.Designer.cs">
+      <DependentUpon>frmpest_diseases1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmphase1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmphase1.Designer.cs">
+      <DependentUpon>frmphase1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmspraymachines1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmspraymachines1.Designer.cs">
+      <DependentUpon>frmspraymachines1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmspraypressure1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmspraypressure1.Designer.cs">
+      <DependentUpon>frmspraypressure1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmstore.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmstore.Designer.cs">
       <DependentUpon>frmstore.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmuomconvert.cs">
+    <Compile Include="frmtanktypes1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmuomconvert.Designer.cs">
-      <DependentUpon>frmuomconvert.cs</DependentUpon>
+    <Compile Include="frmtanktypes1.Designer.cs">
+      <DependentUpon>frmtanktypes1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmuomdets.cs">
+    <Compile Include="frmteams1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmuomdets.Designer.cs">
-      <DependentUpon>frmuomdets.cs</DependentUpon>
+    <Compile Include="frmteams1.Designer.cs">
+      <DependentUpon>frmteams1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmtanktypes.cs">
+    <Compile Include="frmuom1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmtanktypes.Designer.cs">
-      <DependentUpon>frmtanktypes.cs</DependentUpon>
+    <Compile Include="frmuom1.Designer.cs">
+      <DependentUpon>frmuom1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmchemcat.cs">
+    <Compile Include="frmuomconvert1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmchemcat.Designer.cs">
-      <DependentUpon>frmchemcat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmchemtype.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmchemtype.Designer.cs">
-      <DependentUpon>frmchemtype.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmappmethod.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmappmethod.Designer.cs">
-      <DependentUpon>frmappmethod.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmmodeofaction.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmmodeofaction.Designer.cs">
-      <DependentUpon>frmmodeofaction.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmingredients.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmingredients.Designer.cs">
-      <DependentUpon>frmingredients.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Currency.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Currency.Designer.cs">
-      <DependentUpon>Currency.cs</DependentUpon>
+    <Compile Include="frmuomconvert1.Designer.cs">
+      <DependentUpon>frmuomconvert1.cs</DependentUpon>
     </Compile>
     <Compile Include="frmchemical_details.cs">
       <SubType>Form</SubType>
@@ -140,35 +176,11 @@
     <Compile Include="frmcrops.Designer.cs">
       <DependentUpon>frmcrops.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmemployees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmemployees.Designer.cs">
-      <DependentUpon>frmemployees.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmfilter1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmfilter1.Designer.cs">
       <DependentUpon>frmfilter1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmnozzle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmnozzle.Designer.cs">
-      <DependentUpon>frmnozzle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmpests_disease.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmpests_disease.Designer.cs">
-      <DependentUpon>frmpests_disease.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmphase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmphase.Designer.cs">
-      <DependentUpon>frmphase.cs</DependentUpon>
     </Compile>
     <Compile Include="frmsprayapp.cs">
       <SubType>Form</SubType>
@@ -176,23 +188,11 @@
     <Compile Include="frmsprayapp.Designer.cs">
       <DependentUpon>frmsprayapp.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmspraymachine.cs">
+    <Compile Include="frmuomdets1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmspraymachine.Designer.cs">
-      <DependentUpon>frmspraymachine.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmspraypressure.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmspraypressure.Designer.cs">
-      <DependentUpon>frmspraypressure.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmteam.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmteam.Designer.cs">
-      <DependentUpon>frmteam.cs</DependentUpon>
+    <Compile Include="frmuomdets1.Designer.cs">
+      <DependentUpon>frmuomdets1.cs</DependentUpon>
     </Compile>
     <Compile Include="frmwatervolume.cs">
       <SubType>Form</SubType>
@@ -206,64 +206,90 @@
     <Compile Include="frmweeks.Designer.cs">
       <DependentUpon>frmweeks.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmWHORatings.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="frmWHORatings.Designer.cs">
-      <DependentUpon>frmWHORatings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Housedetails.cs">
+    <Compile Include="frmHousedetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Housedetails.Designer.cs">
-      <DependentUpon>Housedetails.cs</DependentUpon>
+    <Compile Include="frmHousedetails.Designer.cs">
+      <DependentUpon>frmHousedetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="MDIParent1.cs">
+    <Compile Include="frmWHORatings1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MDIParent1.Designer.cs">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
+    <Compile Include="frmWHORatings1.Designer.cs">
+      <DependentUpon>frmWHORatings1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmappmethod1.resx">
+      <DependentUpon>frmappmethod1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchemcat1.resx">
+      <DependentUpon>frmchemcat1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchemtargets.resx">
+      <DependentUpon>frmchemtargets.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchemtypes1.resx">
+      <DependentUpon>frmchemtypes1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcurrency1.resx">
+      <DependentUpon>frmcurrency1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcutstage.resx">
+      <DependentUpon>frmcutstage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmemployees1.resx">
+      <DependentUpon>frmemployees1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmingredients1.resx">
+      <DependentUpon>frmingredients1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmodeofaction1.resx">
+      <DependentUpon>frmmodeofaction1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnozzle1.resx">
+      <DependentUpon>frmnozzle1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpest_diseases1.resx">
+      <DependentUpon>frmpest_diseases1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmphase1.resx">
+      <DependentUpon>frmphase1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmspraymachines1.resx">
+      <DependentUpon>frmspraymachines1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmspraypressure1.resx">
+      <DependentUpon>frmspraypressure1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmstore.resx">
       <DependentUpon>frmstore.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmuomconvert.resx">
-      <DependentUpon>frmuomconvert.cs</DependentUpon>
+    <EmbeddedResource Include="frmtanktypes1.resx">
+      <DependentUpon>frmtanktypes1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmuomdets.resx">
-      <DependentUpon>frmuomdets.cs</DependentUpon>
+    <EmbeddedResource Include="frmteams1.resx">
+      <DependentUpon>frmteams1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmtanktypes.resx">
-      <DependentUpon>frmtanktypes.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmchemcat.resx">
-      <DependentUpon>frmchemcat.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmchemtype.resx">
-      <DependentUpon>frmchemtype.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmappmethod.resx">
-      <DependentUpon>frmappmethod.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmmodeofaction.resx">
-      <DependentUpon>frmmodeofaction.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmingredients.resx">
-      <DependentUpon>frmingredients.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Currency.resx">
-      <DependentUpon>Currency.cs</DependentUpon>
+    <EmbeddedResource Include="frmuomconvert1.resx">
+      <DependentUpon>frmuomconvert1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmchemical_details.resx">
@@ -274,53 +300,43 @@
       <DependentUpon>frmcrops.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmemployees.resx">
-      <DependentUpon>frmemployees.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmfilter1.resx">
       <DependentUpon>frmfilter1.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmnozzle.resx">
-      <DependentUpon>frmnozzle.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmpests_disease.resx">
-      <DependentUpon>frmpests_disease.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmphase.resx">
-      <DependentUpon>frmphase.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmsprayapp.resx">
       <DependentUpon>frmsprayapp.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmspraymachine.resx">
-      <DependentUpon>frmspraymachine.cs</DependentUpon>
+    <EmbeddedResource Include="frmuomdets1.resx">
+      <DependentUpon>frmuomdets1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmspraypressure.resx">
-      <DependentUpon>frmspraypressure.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmteam.resx">
-      <DependentUpon>frmteam.cs</DependentUpon>
+    <EmbeddedResource Include="frmwatervolume.resx">
+      <DependentUpon>frmwatervolume.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmweeks.resx">
       <DependentUpon>frmweeks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Housedetails.resx">
-      <DependentUpon>Housedetails.cs</DependentUpon>
+    <EmbeddedResource Include="frmHousedetails.resx">
+      <DependentUpon>frmHousedetails.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="MDIParent1.resx">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
+    <EmbeddedResource Include="frmWHORatings1.resx">
+      <DependentUpon>frmWHORatings1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.frmchemical_details.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.frmcrops.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.frmfilter1.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.frmHousedetails.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.frmsprayapp.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.frmstore.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.frmwatervolume.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.frmweeks.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.MDIParent1.resources" />
+    <EmbeddedResource Include="obj\Debug\Spray_application_program.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -330,6 +346,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\Spray_application_program.vshost.exe.manifest" />
+    <None Include="obj\Debug\Spray_application_program.csproj.GenerateResource.Cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -339,6 +357,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Spray_application_program.exe" />
+    <Content Include="bin\Debug\Spray_application_program.pdb" />
+    <Content Include="bin\Debug\Spray_application_program.vshost.exe" />
+    <Content Include="obj\Debug\Spray_application_program.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\Refactor\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
