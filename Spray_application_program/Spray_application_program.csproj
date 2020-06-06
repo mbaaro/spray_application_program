@@ -335,7 +335,6 @@
     <EmbeddedResource Include="obj\Debug\Spray_application_program.frmstore.resources" />
     <EmbeddedResource Include="obj\Debug\Spray_application_program.frmwatervolume.resources" />
     <EmbeddedResource Include="obj\Debug\Spray_application_program.frmweeks.resources" />
-    <EmbeddedResource Include="obj\Debug\Spray_application_program.MDIParent1.resources" />
     <EmbeddedResource Include="obj\Debug\Spray_application_program.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

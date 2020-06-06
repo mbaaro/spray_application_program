@@ -33,31 +33,38 @@ namespace Spray_application_program
 
                 private void btn_update_Click(object sender, EventArgs e)
                 {
-// make sure the description is not empty
+                    int ad_code = maxid;
+                    String ad_desc = txt_desc.Text.Trim();
+                    bool deleted = chkdeleted.Checked;
+                   // make sure the description is not empty
                     if (txt_desc.Text != "") {
                         // check if the method exits
-                        query = "select count(AD_desc) as count from application_method";
+                        query = "select count(AD_desc) as count1 from application_method where ad_desc='"+ad_desc+"'";
                         sqlcmd = new SqlCommand(query, con);
-                        dtr = sqlcmd.ExecuteNonQuery();
+                        dtr = sqlcmd.ExecuteReader();
                         while (dtr.Read())
                         {
-                            if (dtr.GetInt16(count) > 0)
+                           // MessageBox.Show(dtr.GetSqlDouble(0).Value);
+                            if (dtr.GetSqlInt32(0)>0)
                             {
                                 MessageBox.Show("Application Method Already exists");
                             }
                             else
                             {
-                                integer ad_code=(txt_code.Text+1);
-                                integer ad_desc=txt_desc.Text ;
-                                Boolean deleted = chkdeleted.CheckState;
-
+                                dtr.Close();
+                              
                                 //lets insert
-                                query = "insert int application_method(ad_code,ad_desc,deleted)values()";
-                                sqlcmd = new SqlCommand(query, con);
+                                query = "insert into application_method(ad_code,ad_desc,deleted)values('"+ad_code+"','"+ad_desc+"','"+deleted+"')";
+                                dta = new SqlDataAdapter(query, con);
                                 dta.InsertCommand = new SqlCommand(query,con);
-                                if (dta.InsertCommand.ExecuteNonQuery())
+                                //dta.InsertCommand.ExecuteNonQuery();
+                                if (dta.InsertCommand.ExecuteNonQuery()==1)
                                 {
                                     MessageBox.Show("Application method has been added");
+                                    txt_desc.Clear();
+                                    getid();
+                                    dta.Dispose();
+                                    sqlcmd.Dispose();
                                 }
 
 
@@ -73,14 +80,20 @@ namespace Spray_application_program
         {
             query = "select max(AD_code) as maxid from application_method";
             sqlcmd = new SqlCommand(query, con);
-            dtr = sqlcmd.ExecuteNonQuery();
+            dtr = sqlcmd.ExecuteReader();
             while (dtr.Read()){
-            maxid=dtr.GetInt16("maxid");
-            txt_code.Text = maxid;
+            maxid=(dtr.GetInt16(0)+1);
+            txt_code.Text = maxid.ToString();
             }
             dtr.Dispose();
             sqlcmd.Dispose();
                 }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            //System.Windows.Forms.Application.Exit();
+            this.Dispose();
+        }
 
     }
 }

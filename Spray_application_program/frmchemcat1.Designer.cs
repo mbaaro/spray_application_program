@@ -53,6 +53,7 @@
             this.btn_close.TabIndex = 18;
             this.btn_close.Text = "CLOSE";
             this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // btn_update
             // 
@@ -60,8 +61,9 @@
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(97, 27);
             this.btn_update.TabIndex = 17;
-            this.btn_update.Text = "UPDATE";
+            this.btn_update.Text = "SAVE NEW";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_edit
             // 
@@ -84,6 +86,7 @@
             // 
             // txt_code
             // 
+            this.txt_code.Enabled = false;
             this.txt_code.Location = new System.Drawing.Point(81, 10);
             this.txt_code.Name = "txt_code";
             this.txt_code.Size = new System.Drawing.Size(100, 20);
