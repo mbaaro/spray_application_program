@@ -29,26 +29,27 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lsttargets = new System.Windows.Forms.ListView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btn_close = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_edit = new System.Windows.Forms.Button();
+            this.chk_deleted = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txt_desc = new System.Windows.Forms.TextBox();
+            this.txt_code = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_retrieve = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lsttargets = new System.Windows.Forms.ListView();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -56,13 +57,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.btn_close);
+            this.panel1.Controls.Add(this.btn_update);
+            this.panel1.Controls.Add(this.btn_edit);
+            this.panel1.Controls.Add(this.chk_deleted);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_desc);
+            this.panel1.Controls.Add(this.txt_code);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(6, 6);
@@ -70,8 +71,90 @@
             this.panel1.Size = new System.Drawing.Size(281, 144);
             this.panel1.TabIndex = 0;
             // 
+            // btn_close
+            // 
+            this.btn_close.Location = new System.Drawing.Point(207, 113);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(71, 28);
+            this.btn_close.TabIndex = 8;
+            this.btn_close.Text = "Close";
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // btn_update
+            // 
+            this.btn_update.Location = new System.Drawing.Point(105, 112);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(71, 28);
+            this.btn_update.TabIndex = 7;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.Location = new System.Drawing.Point(14, 115);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(71, 28);
+            this.btn_edit.TabIndex = 6;
+            this.btn_edit.Text = "Edit";
+            this.btn_edit.UseVisualStyleBackColor = true;
+            // 
+            // chk_deleted
+            // 
+            this.chk_deleted.AutoSize = true;
+            this.chk_deleted.Location = new System.Drawing.Point(96, 89);
+            this.chk_deleted.Name = "chk_deleted";
+            this.chk_deleted.Size = new System.Drawing.Size(63, 17);
+            this.chk_deleted.TabIndex = 5;
+            this.chk_deleted.Text = "Deleted";
+            this.chk_deleted.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Target Name";
+            // 
+            // txt_desc
+            // 
+            this.txt_desc.Location = new System.Drawing.Point(96, 62);
+            this.txt_desc.Name = "txt_desc";
+            this.txt_desc.Size = new System.Drawing.Size(153, 20);
+            this.txt_desc.TabIndex = 3;
+            // 
+            // txt_code
+            // 
+            this.txt_code.Enabled = false;
+            this.txt_code.Location = new System.Drawing.Point(96, 29);
+            this.txt_code.Name = "txt_code";
+            this.txt_code.Size = new System.Drawing.Size(153, 20);
+            this.txt_code.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Target ID:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(49, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ADD TARGET";
+            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btn_retrieve);
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button6);
@@ -84,135 +167,14 @@
             this.panel2.Size = new System.Drawing.Size(281, 144);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // btn_retrieve
             // 
-            this.panel3.Controls.Add(this.lsttargets);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(293, 6);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(180, 291);
-            this.panel3.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ADD TARGET";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "CHEMICAL TARGETS";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "CURRENT TARGETS";
-            // 
-            // lsttargets
-            // 
-            this.lsttargets.Location = new System.Drawing.Point(3, 19);
-            this.lsttargets.Name = "lsttargets";
-            this.lsttargets.Size = new System.Drawing.Size(177, 267);
-            this.lsttargets.TabIndex = 3;
-            this.lsttargets.UseCompatibleStateImageBehavior = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Target ID:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(96, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(96, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 65);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Target Name";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(96, 89);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(14, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 28);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(105, 112);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 28);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(207, 113);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 28);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Close";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Chemical";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(104, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 21);
-            this.comboBox1.TabIndex = 3;
+            this.btn_retrieve.Location = new System.Drawing.Point(97, 111);
+            this.btn_retrieve.Name = "btn_retrieve";
+            this.btn_retrieve.Size = new System.Drawing.Size(56, 27);
+            this.btn_retrieve.TabIndex = 11;
+            this.btn_retrieve.Text = "Retrieve";
+            this.btn_retrieve.UseVisualStyleBackColor = true;
             // 
             // comboBox2
             // 
@@ -221,15 +183,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(144, 21);
             this.comboBox2.TabIndex = 5;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 69);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Target";
             // 
             // button5
             // 
@@ -248,6 +201,67 @@
             this.button6.TabIndex = 9;
             this.button6.Text = "Add Target";
             this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 69);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Target";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(104, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(144, 21);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 13);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Chemical";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(49, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "CHEMICAL TARGETS";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lsttargets);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Location = new System.Drawing.Point(293, 6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(180, 291);
+            this.panel3.TabIndex = 1;
+            // 
+            // lsttargets
+            // 
+            this.lsttargets.Location = new System.Drawing.Point(3, 19);
+            this.lsttargets.Name = "lsttargets";
+            this.lsttargets.Size = new System.Drawing.Size(177, 267);
+            this.lsttargets.TabIndex = 3;
+            this.lsttargets.UseCompatibleStateImageBehavior = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(61, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "CURRENT TARGETS";
             // 
             // frmchemtargets
             // 
@@ -278,13 +292,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListView lsttargets;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_edit;
+        private System.Windows.Forms.CheckBox chk_deleted;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_desc;
+        private System.Windows.Forms.TextBox txt_code;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -292,5 +306,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btn_retrieve;
     }
 }
