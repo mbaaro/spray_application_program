@@ -73,7 +73,7 @@ namespace Spray_application_program
 
             if (type == "target")
             {
-                query = "SELECT count(ppd_desc) as count FROM [Pest_Disease_Details] where pdd_desc='"+txt_desc.Text.Trim()+"' ";
+                query = "SELECT count(pdd_desc) as count FROM [Pest_Disease_Details] where pdd_desc='"+txt_desc.Text.Trim()+"' ";
                                 
             }
             else if(type=="pesttarget"){
@@ -82,7 +82,7 @@ namespace Spray_application_program
             sqlcmd = new SqlCommand(query,cn);
             dr = sqlcmd.ExecuteReader();
             while (dr.Read()) {
-                if (dr.GetInt16(0) > 0) {
+                if (dr.GetInt32(0) == 0) {
                     status = false;
                 }
                 else {
@@ -97,7 +97,8 @@ namespace Spray_application_program
 
         private void inserttaget() { 
         //lets insert a new target
-            query= "insert into pest_disease_details(pdd_code,pdd_desc)values('" + txt_code.Text.Trim() + "','" + txt_desc.Text.Trim() + "')";
+            query= "insert into pest_disease_details(pdd_code,pdd_desc,deleted)values('" + txt_code.Text.Trim() + "','" + txt_desc.Text.Trim() + "','"+chk_deleted.Checked+"')";
+            da = new SqlDataAdapter(query, cn);
             da.InsertCommand = new SqlCommand(query,cn);
             if(da.InsertCommand.ExecuteNonQuery()==1){
                 MessageBox.Show("Target Successfully saved");
@@ -129,10 +130,11 @@ namespace Spray_application_program
 
         private void insertpesttarget() { 
         //lets now insert the new combination
-            query = "insert into chemical_pest(chemical_code,target_code)values(\n"+
-            "select  distinct chemical_type.ct_code from chemical_type  where chemical_type.ct_desc='" + cbochem.SelectedItem.ToString().Trim() + "',\n"+
-            "select  distinct Pest_Disease_Details.pdd_code from Pest_Disease_Details  where Pest_Disease_Details.pdd_desc='" + cbotarget.SelectedItem.ToString().Trim() + "'";
+            query = @"insert into chemical_pest(chemical_code,target_code)values(
+            select  distinct chemical_type.ct_code from chemical_type  where chemical_type.ct_desc='" + cbochem.SelectedItem.ToString().Trim() + "',"
+            select  distinct Pest_Disease_Details.pdd_code from Pest_Disease_Details  where Pest_Disease_Details.pdd_desc='" + cbotarget.SelectedItem.ToString().Trim() + "'";
             Console.WriteLine(query);
+            da = new SqlDataAdapter(query, cn);
             da.InsertCommand = new SqlCommand(query,cn);
             if(da.InsertCommand.ExecuteNonQuery()==1){
                 MessageBox.Show("Update unsuccessful");
@@ -154,13 +156,15 @@ namespace Spray_application_program
         }
         private void gettargets() {
             cbotarget.Items.Clear();
-            query = "SELECT distinct(pdd.desc) FROM [Pest_Disease_Details] where deleted=0";
+            query = "SELECT distinct(pdd_desc) FROM [Pest_Disease_Details] where deleted=0";
             sqlcmd = new SqlCommand(query, cn);
             dr = sqlcmd.ExecuteReader();
             while (dr.Read())
             {
                 cbotarget.Items.Add(dr.GetString(0));
             }
+            dr.Dispose();
+
         }
 
        
