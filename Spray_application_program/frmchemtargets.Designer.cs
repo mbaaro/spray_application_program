@@ -40,11 +40,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_retrieve = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbotarget = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbochem = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -155,11 +155,11 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btn_retrieve);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.cbotarget);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.cbochem);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(6, 153);
@@ -175,14 +175,15 @@
             this.btn_retrieve.TabIndex = 11;
             this.btn_retrieve.Text = "Retrieve";
             this.btn_retrieve.UseVisualStyleBackColor = true;
+            this.btn_retrieve.Click += new System.EventHandler(this.btn_retrieve_Click);
             // 
-            // comboBox2
+            // cbotarget
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(104, 68);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(144, 21);
-            this.comboBox2.TabIndex = 5;
+            this.cbotarget.FormattingEnabled = true;
+            this.cbotarget.Location = new System.Drawing.Point(104, 68);
+            this.cbotarget.Name = "cbotarget";
+            this.cbotarget.Size = new System.Drawing.Size(144, 21);
+            this.cbotarget.TabIndex = 5;
             // 
             // button5
             // 
@@ -201,6 +202,7 @@
             this.button6.TabIndex = 9;
             this.button6.Text = "Add Target";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label7
             // 
@@ -211,13 +213,13 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Target";
             // 
-            // comboBox1
+            // cbochem
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(104, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cbochem.FormattingEnabled = true;
+            this.cbochem.Location = new System.Drawing.Point(104, 30);
+            this.cbochem.Name = "cbochem";
+            this.cbochem.Size = new System.Drawing.Size(144, 21);
+            this.cbochem.TabIndex = 3;
             // 
             // label6
             // 
@@ -301,11 +303,11 @@
         private System.Windows.Forms.TextBox txt_code;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbotarget;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbochem;
         private System.Windows.Forms.Button btn_retrieve;
     }
 }

@@ -25,6 +25,8 @@ namespace Spray_application_program
             Connector con = new Connector();
             cn = con.connect();
             getmax();
+            getchemicals();
+            gettargets();
         }
 
         private void btn_close_Click(object sender, EventArgs e)
@@ -39,12 +41,20 @@ namespace Spray_application_program
             if (txt_desc.Text != "")
             {
                 //lets make sure this entry does not exist
+                if (checkexisting("target") == true)
+                {
+                    MessageBox.Show("This Target already exists. Check to make sure none is marked as deleted");
+                }
+                else { 
+                //target  does not exist, lets insert new record
+                    inserttaget();
+                }
 
             }
         }
 
         private void getmax() {
-            query = "SELECT max(pdd_code) as max FROM [spray_app1].[dbo].[Pest_Disease_Details]";
+            query = "SELECT max(pdd_code) as max FROM [Pest_Disease_Details]";
             sqlcmd = new SqlCommand(query, cn);
             dr = sqlcmd.ExecuteReader();
             while (dr.Read())
@@ -63,26 +73,95 @@ namespace Spray_application_program
 
             if (type == "target")
             {
-                query = "SELECT count(ppd_desc) as count FROM [spray_app1].[dbo].[Pest_Disease_Details] where pdd_desc='"+txt_desc.Text.Trim()+"' ";
+                query = "SELECT count(ppd_desc) as count FROM [Pest_Disease_Details] where pdd_desc='"+txt_desc.Text.Trim()+"' ";
                                 
             }
             else if(type=="pesttarget"){
-                query = "";
+                query = "select count(chemical_pest.target_code)as count from chemical_pest inner join pest_disease_details on chemical_pest.target_code=pest_disease_details.pdd_code inner join chemical_type on chemical_pest.chemical_code=chemical_type.ct_code where pest_disease_details.pdd_desc='" + cbotarget.SelectedItem.ToString().Trim() + "' and chemical_type.ct_desc='" + cbochem.SelectedItem.ToString().Trim() + "'";
             }
             sqlcmd = new SqlCommand(query,cn);
             dr = sqlcmd.ExecuteReader();
             while (dr.Read()) {
-                if (dr.GetInt16() > 0) {
+                if (dr.GetInt16(0) > 0) {
                     status = false;
                 }
                 else {
                     status = true;
                 }
             }
+            //lets close the connections
+            dr.Dispose();
+            sqlcmd.Dispose();
             return status;
         }
 
+        private void inserttaget() { 
+        //lets insert a new target
+            query= "insert into pest_disease_details(pdd_code,pdd_desc)values('" + txt_code.Text.Trim() + "','" + txt_desc.Text.Trim() + "')";
+            da.InsertCommand = new SqlCommand(query,cn);
+            if(da.InsertCommand.ExecuteNonQuery()==1){
+                MessageBox.Show("Target Successfully saved");
+            }else{
+                MessageBox.Show("Target not successfully saved");
+            }
+        //closing open connections
+            da.Dispose();
+                    }
 
+        private void btn_retrieve_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //lets make sure this combination does not exist
+            if (checkexisting("pesttarget") == true)
+            {
+                MessageBox.Show("This Chemical - Target combination already exists. Check to make sure none is marked as deleted");
+            }
+            else
+            {
+                //target  does not exist, lets insert new record
+                insertpesttarget();
+            }
+        }
+
+        private void insertpesttarget() { 
+        //lets now insert the new combination
+            query = "insert into chemical_pest(chemical_code,target_code)values(\n"+
+            "select  distinct chemical_type.ct_code from chemical_type  where chemical_type.ct_desc='" + cbochem.SelectedItem.ToString().Trim() + "',\n"+
+            "select  distinct Pest_Disease_Details.pdd_code from Pest_Disease_Details  where Pest_Disease_Details.pdd_desc='" + cbotarget.SelectedItem.ToString().Trim() + "'";
+            Console.WriteLine(query);
+            da.InsertCommand = new SqlCommand(query,cn);
+            if(da.InsertCommand.ExecuteNonQuery()==1){
+                MessageBox.Show("Update unsuccessful");
+            }else{
+                MessageBox.Show("Update Done");
+            }
+            da.Dispose();
+        }
+        private void getchemicals() {
+            cbochem.Items.Clear();
+            query = "SELECT distinct(ct_desc) FROM [chemical_type] where deleted=0";
+            sqlcmd = new SqlCommand(query, cn);
+            dr = sqlcmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cbochem.Items.Add(dr.GetString(0));
+            }
+            dr.Dispose();
+        }
+        private void gettargets() {
+            cbotarget.Items.Clear();
+            query = "SELECT distinct(pdd.desc) FROM [Pest_Disease_Details] where deleted=0";
+            sqlcmd = new SqlCommand(query, cn);
+            dr = sqlcmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cbotarget.Items.Add(dr.GetString(0));
+            }
+        }
 
        
     }
