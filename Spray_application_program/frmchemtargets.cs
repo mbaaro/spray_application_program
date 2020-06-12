@@ -18,6 +18,7 @@ namespace Spray_application_program
         SqlDataReader dr;
         SqlCommand sqlcmd;
         SqlConnection cn;
+        String selected;
 
         public frmchemtargets()
         {
@@ -51,7 +52,9 @@ namespace Spray_application_program
                 }
 
             }
-        }
+            //now lets refresh the  combos
+            gettargets();
+            }
 
         private void getmax() {
             query = "SELECT max(pdd_code) as max FROM [Pest_Disease_Details]";
@@ -110,8 +113,19 @@ namespace Spray_application_program
                     }
 
         private void btn_retrieve_Click(object sender, EventArgs e)
-        {
-            
+        {//lets first clear  the listbox
+            lsttargets.Items.Clear();
+            //lets retrievetargets for selected chemical
+            targettext.Text = "Targets for: "+cbochem.SelectedItem;
+            query = "select pest_disease_details.pdd_desc from chemical_pest inner join pest_disease_details on chemical_pest.target_code=pest_disease_details.pdd_code inner join chemical_details on chemical_pest.chemical_code=chemical_details.chemical_code where chemical_details.chemical_name='"+cbochem.SelectedItem+"'";
+            sqlcmd = new SqlCommand(query,cn);
+            dr = sqlcmd.ExecuteReader();
+            while (dr.Read()) {
+                lsttargets.Items.Add(dr.GetString(0) + "\n");
+               
+               // lsttargets.Items.Add("\n");
+            }
+            dr.Dispose();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -131,8 +145,8 @@ namespace Spray_application_program
         private void insertpesttarget() { 
         //lets now insert the new combination
             query = @"insert into chemical_pest(chemical_code,target_code)values(
-            select  distinct chemical_type.ct_code from chemical_type  where chemical_type.ct_desc='" + cbochem.SelectedItem.ToString().Trim() + "',"
-            select  distinct Pest_Disease_Details.pdd_code from Pest_Disease_Details  where Pest_Disease_Details.pdd_desc='" + cbotarget.SelectedItem.ToString().Trim() + "'";
+            SELECT chemical_code  FROM [Chemical_Details] where chemical_name='" + cbochem.SelectedItem.ToString().Trim()
+            + "'select  distinct Pest_Disease_Details.pdd_code from Pest_Disease_Details  where Pest_Disease_Details.pdd_desc='" + cbotarget.SelectedItem.ToString().Trim() + "'";
             Console.WriteLine(query);
             da = new SqlDataAdapter(query, cn);
             da.InsertCommand = new SqlCommand(query,cn);
@@ -145,7 +159,7 @@ namespace Spray_application_program
         }
         private void getchemicals() {
             cbochem.Items.Clear();
-            query = "SELECT distinct(ct_desc) FROM [chemical_type] where deleted=0";
+            query = "SELECT distinct(chemical_name)  FROM [Chemical_Details] where deleted=0";
             sqlcmd = new SqlCommand(query, cn);
             dr = sqlcmd.ExecuteReader();
             while (dr.Read())
@@ -167,6 +181,19 @@ namespace Spray_application_program
 
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //delete selected item
+           //MessageBox.Show( lsttargets.ge);
+        }
+
+        private void lsttargets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selected = "";
+           // lsttargets.
+        }
+
+      
        
     }
 }

@@ -49,7 +49,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lsttargets = new System.Windows.Forms.ListView();
-            this.label3 = new System.Windows.Forms.Label();
+            this.TARGET = new System.Windows.Forms.ColumnHeader();
+            this.targettext = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -193,6 +194,7 @@
             this.button5.TabIndex = 10;
             this.button5.Text = "Delete Target";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -242,7 +244,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.lsttargets);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.targettext);
             this.panel3.Location = new System.Drawing.Point(293, 6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(180, 291);
@@ -250,20 +252,23 @@
             // 
             // lsttargets
             // 
+            this.lsttargets.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.lsttargets.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.TARGET});
             this.lsttargets.Location = new System.Drawing.Point(3, 19);
             this.lsttargets.Name = "lsttargets";
             this.lsttargets.Size = new System.Drawing.Size(177, 267);
-            this.lsttargets.TabIndex = 3;
+            this.lsttargets.TabIndex = 1;
             this.lsttargets.UseCompatibleStateImageBehavior = false;
+            this.lsttargets.SelectedIndexChanged += new System.EventHandler(this.lsttargets_SelectedIndexChanged);
             // 
-            // label3
+            // targettext
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "CURRENT TARGETS";
+            this.targettext.AutoSize = true;
+            this.targettext.Location = new System.Drawing.Point(13, 3);
+            this.targettext.Name = "targettext";
+            this.targettext.Size = new System.Drawing.Size(0, 13);
+            this.targettext.TabIndex = 2;
             // 
             // frmchemtargets
             // 
@@ -292,7 +297,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label targettext;
         private System.Windows.Forms.ListView lsttargets;
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Button btn_update;
@@ -309,5 +314,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbochem;
         private System.Windows.Forms.Button btn_retrieve;
+        private System.Windows.Forms.ColumnHeader TARGET;
     }
 }

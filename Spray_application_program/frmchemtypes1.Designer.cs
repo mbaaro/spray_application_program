@@ -62,6 +62,7 @@
             this.btn_update.TabIndex = 17;
             this.btn_update.Text = "UPDATE";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_edit
             // 
@@ -84,6 +85,7 @@
             // 
             // txt_code
             // 
+            this.txt_code.Enabled = false;
             this.txt_code.Location = new System.Drawing.Point(85, 13);
             this.txt_code.Name = "txt_code";
             this.txt_code.Size = new System.Drawing.Size(100, 20);
