@@ -40,14 +40,17 @@ namespace Spray_application_program
         private void getmaxid() {
             query = "";
             sqlcm = new SqlCommand(query,cn);
-            dr = sqlcm.ExecuteNonQuery();
+            dr = sqlcm.ExecuteReader();
             while(dr.Read()){
-                txt_code.Text = (dr.GetInt32(0) + 1);
+                txt_code.Text = (dr.GetInt32(0) + 1).ToString();
                 maxid = (dr.GetInt32(0) + 1);
             }
         }
         private bool checkexisting() {
-            bool existing;
+            bool existing=false ;
+
+
+            return existing;
         }
         private void insertnew() {
         

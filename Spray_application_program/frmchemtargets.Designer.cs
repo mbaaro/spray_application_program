@@ -49,7 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lsttargets = new System.Windows.Forms.ListView();
-            this.TARGET = new System.Windows.Forms.ColumnHeader();
             this.targettext = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -253,8 +252,7 @@
             // lsttargets
             // 
             this.lsttargets.Alignment = System.Windows.Forms.ListViewAlignment.Default;
-            this.lsttargets.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.TARGET});
+            this.lsttargets.FullRowSelect = true;
             this.lsttargets.Location = new System.Drawing.Point(3, 19);
             this.lsttargets.Name = "lsttargets";
             this.lsttargets.Size = new System.Drawing.Size(177, 267);
@@ -314,6 +312,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbochem;
         private System.Windows.Forms.Button btn_retrieve;
-        private System.Windows.Forms.ColumnHeader TARGET;
     }
 }
