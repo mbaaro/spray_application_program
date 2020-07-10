@@ -221,6 +221,7 @@
             this.cbochem.Name = "cbochem";
             this.cbochem.Size = new System.Drawing.Size(144, 21);
             this.cbochem.TabIndex = 3;
+            this.cbochem.SelectedIndexChanged += new System.EventHandler(this.cbochem_SelectedIndexChanged);
             // 
             // label6
             // 
